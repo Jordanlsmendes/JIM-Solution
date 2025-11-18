@@ -1,0 +1,28 @@
+﻿
+
+.carousel-item {
+    height: 500px; 
+}
+
+.carousel-item-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+.carousel-inner {
+    object-fit: unset;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+}
+
