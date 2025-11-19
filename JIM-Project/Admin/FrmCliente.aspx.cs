@@ -61,7 +61,7 @@ namespace JIM_Project.Admin
             lblMensagem.InnerText = ClienteDAO.CadastrarCliente(user);
 
             LimparCampos();
-            Response.Redirect("~/FrmLogin");
+            Response.Redirect("~/FrmLogin.aspx");
         }
 
         private void LimparCampos()

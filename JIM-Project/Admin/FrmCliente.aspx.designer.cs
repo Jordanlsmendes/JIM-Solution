@@ -102,7 +102,7 @@ namespace JIM_Project.Admin
         /// Campo gerado automaticamente.
         /// Para modificar, mova a declaração de campo do arquivo de designer a um arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtRepetirSenha;
+        protected global::System.Web.UI.HtmlControls.HtmlInputPassword txtRepetirSenha;
 
         /// <summary>
         /// Controle btnCadastar.

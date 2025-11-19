@@ -8,14 +8,14 @@
     <title>Administração</title>
    <style>
         body {
-            background-color: #A22C2C; /* vermelho escuro */
+            background-color: #A22C2C /* vermelho escuro */
             color: darkred; /* amarelo para texto */
             font-family: "Consolas", monospace;
             padding: 20px;
         }
 
         h1 {
-            color: darkred; /* amarelo destacado */
+            color: darkred; 
             font-weight: normal;
             border-bottom: 2px solid #9B433D; /* vermelho acobreado */
             padding-bottom: 5px;

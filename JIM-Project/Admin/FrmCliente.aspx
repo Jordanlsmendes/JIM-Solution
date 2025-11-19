@@ -141,7 +141,7 @@
 
             <p>
                 <label>Repetir Senha:</label>
-                <input type="text"  id="txtRepetirSenha" runat="server"/>
+                <input type="password"  id="txtRepetirSenha" runat="server"/>
             </p>
 
             <p>

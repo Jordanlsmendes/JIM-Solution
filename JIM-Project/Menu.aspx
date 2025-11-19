@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="JIM_Project.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="JIM_Project.Default" %>
 
 <!DOCTYPE html>
 
@@ -10,6 +10,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
      <link rel="stylesheet" href="css/style.css"/>
     <title></title>
+    <style>
+        h2{
+            color: white;
+        }
+        .cat {
+            padding-left: 0.55em;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            gap: 4em;
+            padding-top: 5em;
+            padding-bottom: 5em;
+            flex-wrap: wrap;
+        }
+
+        .categoria-item {
+            text-align: center;
+        }
+
+        .titulo-categoria {
+            display: block;
+            font-size: 1.3em;
+            margin-bottom: 0.7em;
+            font-weight: bold;
+            color: #fff; /* ajuste se quiser outra cor */
+        }
+
+        .img-botao {
+            width: 200px;
+            height: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .img-botao:hover {
+            transform: scale(1.2);
+        }
+    </style>
 </head>
 <body>
 
@@ -21,7 +60,7 @@
 
             <!-- LOGO ESQUERDA -->
             <a class="navbar-brand" style="color:white; font-size:1.5rem;" href="index.html">
-                GIM
+                JIM
             </a>
 
             <!-- BOTÃO MOBILE -->
@@ -106,16 +145,43 @@
      </section>
 
       <!-- DESTAQUES -->
- <section style="background-color:#9c3f3a;">
-  <div class="container py-4">
-    <div class="row justify-content-center text-center">
-      <div class="col-lg-4">
-        <h2 class="fw-bold" style="color:#ffff;">Produtos Cadastrados</h2>
-        <p style="color:#ffff;">Estoque de produtos adicionados ao sistema</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <section style="display: block;">
+            <h2 class="cat">CATEGORIAS</h2>
+
+            <div class="botoes">
+
+                <div id="Entrada" class="categoria-item">
+                    <span class="titulo-categoria">Entrada</span>
+                    <a href="Produtos.aspx">
+                        <img class="img-botao rounded-circle" src="img/Entrada.png">
+                    </a>
+                </div>
+
+                <div id="Principal" class="categoria-item">
+                    <span class="titulo-categoria">Principal</span>
+                    <a href="Produtos.aspx">
+                        <img class="img-botao rounded-circle" src="img/Principal.png">
+                    </a>
+                </div>
+
+                <div id="Suco" class="categoria-item">
+                    <span class="titulo-categoria">Bebida</span>
+                    <a href="Produtos.aspx">
+                        <img class="img-botao rounded-circle" src="img/suco.png">
+                    </a>
+                </div>
+
+                <div id="Sobremesa" class="categoria-item">
+                    <span class="titulo-categoria">Sobremesa</span>
+                    <a href="Produtos.aspx">
+                        <img class="img-botao rounded-circle" src="img/Sobremesa.png">
+                    </a>
+                </div>
+
+            </div>
+
+            <hr />
+        </section>
 
 
       <!-- RODAPÉ -->

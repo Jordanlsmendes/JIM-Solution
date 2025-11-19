@@ -40,7 +40,22 @@ namespace JIM_Project
                 //Cliente possui permissão para acessar o sistema
                 ClienteDAO.SetUltimoAcesso(cliente);
                 FormsAuthentication.SetAuthCookie(cliente.Login, true);
-                Response.Redirect("~/Admin/");
+
+                if (cliente.UsuarioPerfilID == 2)
+                {
+
+                    Response.Redirect("~/Menu.aspx");
+                    Mensagem("Bem vindo cliente");
+                }
+                if (cliente.UsuarioPerfilID == 1)
+                {
+                    Response.Redirect("~/Admin/FrmProduto.aspx");
+                    Mensagem("Bem vindo administrador");
+                }
+
+                txtLogin.Value = "";
+                txtSenha.Value = "";
+
             }
             else
             {

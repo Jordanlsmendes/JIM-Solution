@@ -78,8 +78,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\Entrada.png" />
+    <Content Include="img\Principal.png" />
+    <Content Include="img\Sobremesa.png" />
+    <Content Include="img\suco.png" />
+    <Content Include="Produtos.aspx" />
     <Content Include="css\Login.css" />
-    <Content Include="Admin\Default.aspx" />
+    <Content Include="Admin\Clientes.aspx" />
     <Content Include="Admin\FrmCliente.aspx" />
     <Content Include="Admin\FrmProduto.aspx" />
     <Content Include="App_Data\Database.mdf" />
@@ -87,7 +92,7 @@
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
     <Content Include="css\style.css" />
-    <Content Include="Default.aspx" />
+    <Content Include="Menu.aspx" />
     <Content Include="FrmLogin.aspx" />
     <Content Include="img\comida-deliciosa-na-mesa.jpg" />
     <Content Include="img\coxinha.jpg" />
@@ -107,12 +112,12 @@
   <ItemGroup>
     <Compile Include="Admin\CategoriaDAO.cs" />
     <Compile Include="Admin\ClienteDAO.cs" />
-    <Compile Include="Admin\Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Admin\Clientes.aspx.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Admin\Clientes.aspx.designer.cs">
+      <DependentUpon>Clientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\FrmCliente.aspx.cs">
       <DependentUpon>FrmCliente.aspx</DependentUpon>
@@ -130,6 +135,13 @@
     </Compile>
     <Compile Include="Admin\PerfilUsuarioDAO.cs" />
     <Compile Include="Admin\ProdutoDAO.cs" />
+    <Compile Include="Produtos.aspx.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Produtos.aspx.designer.cs">
+      <DependentUpon>Produtos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Categoria.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -139,12 +151,12 @@
     <Compile Include="Compra.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Menu.aspx.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="Menu.aspx.designer.cs">
+      <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Endereco.cs">
       <DependentUpon>Model.tt</DependentUpon>

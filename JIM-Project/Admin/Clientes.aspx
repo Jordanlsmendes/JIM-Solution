@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="JIM_Project.Admin.Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Clientes.aspx.cs" Inherits="JIM_Project.Admin.Default" %>
 
 <!DOCTYPE html>
 
